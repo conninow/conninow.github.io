@@ -12,18 +12,20 @@
     <link href="bootstrap.min.css" rel="stylesheet">
     <style>
         .banner-img {
-        background-image: url("banner.jpg");
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+            background-image: url("bannercropmoreshort.jpg");
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-position: right top;
+            background-attachment: fixed;
         }
         .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
         }
 
         @media (min-width: 768px) {
@@ -38,29 +40,55 @@
 </head>
 <body class="d-flex h-100 text-center text-white bg-dark banner-img">
     
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="mb-auto">
-            <div>
-            <h3 class="float-md-start mb-0">Conni Now</h3>
-            <nav class="nav nav-masthead justify-content-center float-md-end">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                <a class="nav-link" href="#subscribe">Subscribe</a>
-                <a class="nav-link" href="#partner">Partner</a>
-            </nav>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <div>
+            <h3 class="float-md-start mb-0">ConniNow</h3>
+        </div>
+    </header>
+    <main class="px-5">
+        <div class="row p-4">
+            <div class="card bg-conni">
+                <h1 id="home">Conni's ministry.</h1>
+                <h5 class="card-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, nam incidunt officiis provident mollitia ducimus unde quidem fugiat. Vitae, voluptates.</h5>
             </div>
-        </header>
+        </div>
+        <div class="row p-5">
+            <div class="card p-3 bg-conni">
+                <h2 class="card-title">Subscribe to my newsletter.</h2>
+                <form action="https://formsubmit.co/conninow@gmail.com" method="POST">
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="First Name" name="firstname" required>
+                  </div>
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Last Name" name="lastname" required>
+                  </div>
+                  <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="email@example.com" name="email" required>
+                  </div>
+                  <input type="hidden" name="_captcha" value="false">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        <div class="row p-5">
+            <div class="card p-3 bg-conni">
+                <h2 class="card-title">Partner with me.</h2>
+                <a class="btn btn-success" href="https://blogs.ethnos360.org/conni-dilworth/give/" target="_blank" role="button">Partner</a>
+            </div>
+        </div>
 
-    <main class="px-3">
-        <h1 id="home">Conni's ministry.</h1>
-        <p class="lead">Conni is currently engaged in ... well, it's complicated.</p>
-        <p class="lead">
-        <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
-        </p>
-        
+            
+        </div>
+
     </main>
 
-    <footer class="mt-auto text-white-50">
-        <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+    <footer class="mt-auto">
+        <div class="row justify-content-center">
+            <div class="card bg-conni" style="max-width: 400px; margin-bottom: 0;">
+                <p class="card-body">Contact me: conninow@gmail.com</p>
+            </div>
+        </div>
+
     </footer>
 </div>
 
