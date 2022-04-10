@@ -1,18 +1,18 @@
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-    <!--END GOOGLE ANALYTICS-->
     <meta name="robots" content="noindex,nofollow">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to ConniNow.com</title>
-    <!-- Bootstrap core CSS -->
+    <title>ConniNow | Ministry home of Conni Dilworth</title>
     <link href="bootstrap.min.css" rel="stylesheet">
     <style>
-        .banner-img {
-            background-image: url("bannercropmoreshort.jpg");
+        h1, h2, h3, h4, h5, h6, p {
+            font-family: Georgia;
+            text-shadow: 0 .05rem .15rem rgba(0, 0, 0, .5);
+        }
+        .bg-img {
+            background-image: url("banner.jpg");
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -20,76 +20,50 @@
             background-position: right top;
             background-attachment: fixed;
         }
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
+        .cover-container {
+            max-width: 35em;
         }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
+        .bg-conni {
+            background: rgba(0, 0, 0, .40);
+            height: max-content;
         }
     </style>
-
-    <!-- Custom styles for this template -->
-    <link href="custom.css" rel="stylesheet">
 </head>
-<body class="d-flex h-100 text-center text-white banner-img">
-    
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column bg-conni">
-    <main class="px-5">
-        <div class="row p-4">
-
-                <h1 id="home">Conni Dilworth</h1>
-                <h5 class="card-body">Connecting church planters worldwide with resources, ongoing training, and mission solutions.</h5>
-
-        </div>
-        <div class="row p-5">
-
-                <h2 class="">Subscribe to My Newsletter</h2>
-                <form action="https://formsubmit.co/a424de22d10085c218bd390b58359f4f" method="POST">
-                  <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="First Name" name="firstname" required>
-                  </div>
-                  <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Last Name" name="lastname" required>
-                  </div>
-                  <div class="mb-3">
-                    <input type="email" class="form-control" placeholder="email@example.com" name="email" required>
-                  </div>
-                  <input type="hidden" name="_captcha" value="false">
-                  <input type="hidden" name="_next" value="https://conninow.com/thanks.html">
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-
-        <div class="row p-5">
-
-                <h2 class="">Partner with Me</h2>
-                <p>Support my ministry through one-time or recurring financial gifts.</p>
-                <a class="btn btn-success" href="https://blogs.ethnos360.org/conni-dilworth/give/" target="_blank" role="button">Partner</a>
-
-        </div>
-
-            
-        </div>
-
-    </main>
-
-    <footer class="mt-auto">
-        <div class="row justify-content-center">
-            <div class="card bg-conni" style="max-width: 400px; margin-bottom: 0;">
-                <p class="card-body">Contact me: conninow@gmail.com</p>
+<body class="bg-img text-center text-white">
+    <div class="cover-container mx-auto bg-conni" >
+        <main>
+            <div class="row p-4">
+                <h1>Conni Dilworth</h1>
+                <h4>Connecting church planters worldwide with resources, ongoing training, and mission solutions.</h4>
             </div>
-        </div>
-
-    </footer>
-</div>
-
+            <div class="row p-5 justify-content-center">
+                <h2 class="">Subscribe to My Newsletter</h2>
+                <form action="https://formsubmit.co/a424de22d10085c218bd390b58359f4f" method="POST" style="padding: 0;">
+                    <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="First Name" name="firstname" required>
+                    </div>
+                    <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Last Name" name="lastname" required>
+                    </div>
+                    <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="email@example.com" name="email" required>
+                    </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://conninow.com/thank-you">
+                    <button type="submit" class="btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+            <div class="row p-5 justify-content-center">
+                <h2 class="">Partner with Me</h2>
+                <h5>Support the ministry through one-time or recurring financial gifts.</h5>
+                <a class="btn btn-success" href="https://blogs.ethnos360.org/conni-dilworth/give/" target="_blank" role="button">Partner</a>
+            </div>
+        </main>
+        <footer class="pt-5 pb-3">
+            <h6 class="p-1">conninow@gmail.com</h6>
+            <a class="p-1" href="https://www.facebook.com/groups/conninow" target="_blank"><img src="https://img.icons8.com/color/452/facebook-new.png" height="40px" alt="instagram"></a>
+            <a href="https://www.instagram.com/conninow/" target="_blank"><img src="https://img.icons8.com/color/344/instagram-new--v1.png" height="40px" alt="instagram"></a>
+        </footer>
+    </div>
 </body>
 </html>
-
-
